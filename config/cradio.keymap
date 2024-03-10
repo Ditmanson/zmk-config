@@ -100,16 +100,16 @@
             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
             &kp A        &kp R       &kp S     &kp T     &kp D          &kp H      &kp N     &kp E       &kp I     &kp O
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                          &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &kp SPACE    
+                                          &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
             >;
         };
 
         num_layer {
             bindings = <
             &kp ESC    &kp GRAVE  &kp SQT   &kp MINUS   &kp F12        &trans     &kp LBKT   &kp RBKT       &trans      &trans
-            &kp N1    &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9    &kp N0
+            &td_1     &td_2      &td_3      &td_4       &td_5         &td_6      &td_6      &td_7      &td_8     &tap_dance_9 
             &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2    &kp EQUAL     &bt BT_SEL 4     &bt BT_SEL 5     &trans     &trans     &trans   &kp BSLH
-                                             &trans     &kp ESC        &trans     &kp LSHFT
+                                             &trans     &kp ESC       &kp LSHFT       &trans     
             >;
         };
 
