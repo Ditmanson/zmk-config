@@ -27,13 +27,13 @@
 
         
     };
-     conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NUM ARW>;
-            then-layer = <MOD>;
-        };
-    };
+    //  conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <NUM ARW>;
+    //         then-layer = <MOD>;
+    //     };
+    // };
 
     td_1: tap_dance_1 {
         compatible = "zmk,behavior-tap-dance";
@@ -112,6 +112,41 @@
         #binding-cells = <0>;
         bindings = <&kp RBKT>, <&kp RBRC>;
     };
+    td_cv: tap_dance_cv {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp C>, <&kp V>;
+    };
+    td_pl: tap_pl {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp P>, <&kp L>;
+    };
+    td_tn: tap_tn {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp T>, <&kp N>;
+    };
+    td_iw: tap_iw {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp I>, <&kp W>;
+    };
+    td_dk: tap_dk {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp D>, <&kp K>;
+    };
+    td_cmaless: tap_cmaless {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp COMMA>, <&kp LT>;
+    };
+    td_prdgt: tap_prdgt {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp DOT>, <&kp GT>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -119,7 +154,7 @@
             bindings = <
             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
             &kp A        &kp R       &kp S     &kp T     &kp D          &kp H      &kp N     &kp E       &kp I     &kp O
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &td_slash
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &td_cmaless  &td_prdgt    &td_slash
                                           &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
             >;
         };
@@ -137,7 +172,7 @@
             bindings = <
             &trans     &trans      &trans     &trans    &trans         &kp GRAVE    &kp S     &kp UP     &kp SPACE     &kp W
             &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &trans       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
-            &trans     &trans     &trans     &trans     &trans         &kp C       &kp V     &kp P     &bt BT_NXT  &bt BT_PRV
+            &trans     &trans     &trans     &trans     &trans         &td_dk       &td_cv     &td_pl     &trans  &kp SPACE
                                              &trans     &trans         &trans     &trans
             >;
         };
