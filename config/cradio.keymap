@@ -13,7 +13,7 @@
 #define ARW 2
 #define MOD 3
 //add comment
-/ {
+{
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -33,6 +33,64 @@
             if-layers = <NUM ARW>;
             then-layer = <MOD>;
         };
+    };
+
+    td_1: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N1>, <&kp EXCL>;
+    };
+
+    td_2: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N2>, <&kp AT>;
+    };
+    td_3: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N3>, <&kp HASH>;
+    };
+    td_4: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N4>, <&kp DLR>;
+    };
+    td_5: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N5>, <&kp PERC>;
+    };
+    td_6: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N6>, <&kp CARET>;
+    };
+    td_7: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N7>, <&kp AMP>;
+    };
+
+    td_8: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N8>, <&kp AST>;
+    };
+    td_9: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N9>, <&kp LPRN>;
+    };
+    td_0: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp N0>, <&kp RPRN>;
+    };
+    td_tab: tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <2>;
+        bindings = <&kp SPACE>, <&kp TAB>;
     };
 
     keymap {
