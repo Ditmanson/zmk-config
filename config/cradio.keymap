@@ -59,7 +59,7 @@
     td_5: tap_dance_5 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
-        bindings = <&kp N5>, <&kp PERC>;
+        bindings = <&kp N5>, <&kp PRCNT>;
     };
     td_6: tap_dance_6 {
         compatible = "zmk,behavior-tap-dance";
@@ -69,23 +69,23 @@
     td_7: tap_dance_7 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
-        bindings = <&kp N7>, <&kp AMP>;
+        bindings = <&kp N7>, <&kp AMPS>;
     };
 
     td_8: tap_dance_8 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
-        bindings = <&kp N8>, <&kp AST>;
+        bindings = <&kp N8>, <&kp ASTRK>;
     };
     td_9: tap_dance_9 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
-        bindings = <&kp N9>, <&kp LPRN>;
+        bindings = <&kp N9>, <&kp LPAR>;
     };
     td_0: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
-        bindings = <&kp N0>, <&kp RPRN>;
+        bindings = <&kp N0>, <&kp RPAR>;
     };
     td_tab: tap_dance_tab {
         compatible = "zmk,behavior-tap-dance";
