@@ -152,6 +152,11 @@
         #binding-cells = <0>;
         bindings = <&kp S>, <&kp Z>;
     };
+    td_colod: tap_colod {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp SEMI>, <&kp COLON>;
+    };
  
     keymap {
         compatible = "zmk,keymap";
