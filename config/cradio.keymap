@@ -89,7 +89,7 @@
     };
     td_tab: tap_dance_tab {
         compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
         bindings = <&kp SPACE>, <&kp TAB>;
     };
 
