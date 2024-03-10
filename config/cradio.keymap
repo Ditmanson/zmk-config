@@ -35,59 +35,59 @@
         };
     };
 
-    td_1: tap_dance {
+    td_1: tap_dance_1 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N1>, <&kp EXCL>;
     };
 
-    td_2: tap_dance {
+    td_2: tap_dance_2 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N2>, <&kp AT>;
     };
-    td_3: tap_dance {
+    td_3: tap_dance_3 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N3>, <&kp HASH>;
     };
-    td_4: tap_dance {
+    td_4: tap_dance_4 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N4>, <&kp DLR>;
     };
-    td_5: tap_dance {
+    td_5: tap_dance_5 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N5>, <&kp PERC>;
     };
-    td_6: tap_dance {
+    td_6: tap_dance_6 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N6>, <&kp CARET>;
     };
-    td_7: tap_dance {
+    td_7: tap_dance_7 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N7>, <&kp AMP>;
     };
 
-    td_8: tap_dance {
+    td_8: tap_dance_8 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N8>, <&kp AST>;
     };
-    td_9: tap_dance {
+    td_9: tap_dance_9 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N9>, <&kp LPRN>;
     };
-    td_0: tap_dance {
+    td_0: tap_dance_0 {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp N0>, <&kp RPRN>;
     };
-    td_tab: tap_dance {
+    td_tab: tap_dance_tab {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <2>;
         bindings = <&kp SPACE>, <&kp TAB>;
