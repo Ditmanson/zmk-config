@@ -131,7 +131,7 @@
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         bindings = <&kp I>, <&kp W>;
-    };
+    }; 
     td_dk: tap_dk {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
@@ -147,7 +147,12 @@
         #binding-cells = <0>;
         bindings = <&kp DOT>, <&kp GT>;
     };
-
+    td_sz: tap_sz {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp S>, <&kp Z>;
+    };
+ 
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -170,7 +175,7 @@
 
         arrow_layer {
             bindings = <
-            &trans     &trans      &trans     &trans    &trans         &kp GRAVE    &kp S     &kp UP     &kp SPACE     &kp W
+            &trans     &trans      &trans     &trans    &trans         &kp GRAVE    &td_sz     &kp UP     &td_tn     &td_iw
             &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &trans       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
             &trans     &trans     &trans     &trans     &trans         &td_dk       &td_cv     &td_pl     &trans  &kp SPACE
                                              &trans     &trans         &trans     &trans
