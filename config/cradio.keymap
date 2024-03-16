@@ -196,7 +196,7 @@
             bindings = <
            &trans      &trans     &trans     &trans    &trans            &trans     &trans     &trans     &trans    &trans
            &mt LALT A &mt LCMD R &mt LCTRL S  &mt LSHFT T  &trans      &trans    &mt RSHFT N &mt RCTRL E  &mt RCMD I &mt RALT O
-            &trans     &trans     &trans    &trans      &trans           &trans     &trans     &trans     &trans     &trans
+            &kp LCTRL Z     &trans     &trans    &trans      &trans           &trans     &trans     &trans     &trans     &trans
                                              &trans     &trans         &trans     &trans
             >;
         };
