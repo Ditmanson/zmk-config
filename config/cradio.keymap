@@ -162,6 +162,11 @@
         #binding-cells = <0>;
         bindings = <&kp GRAVE>, <&kp TILDE>;
     };
+    td_grave_c: tap_grave_c {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp GRAVE>, <&kp LC(C)>;
+    };
  
     keymap {
         compatible = "zmk,keymap";
@@ -185,9 +190,9 @@
 
         arrow_layer {
             bindings = <
-            &trans     &trans      &trans     &trans    &trans         &td_grave   &td_sz     &kp UP     &td_tn     &td_iw
-            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &trans       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
-            &trans     &trans     &trans     &trans     &trans         &td_dk       &td_cv     &td_pl     &trans  &kp SPACE
+            &trans     &trans      &trans     &trans    &trans         &td_grave_c   &trans     &kp UP     &trans    &trans
+            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LA(LS(4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
+            &trans     &trans     &trans     &trans     &trans        &trans      &trans     &trans     &trans  &trans
                                              &trans     &trans         &trans     &trans
             >;
         };
