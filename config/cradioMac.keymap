@@ -162,6 +162,11 @@
         #binding-cells = <0>;
         bindings = <&kp GRAVE>, <&kp TILDE>;
     };
+    td_grave_c: tap_grave_c {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp GRAVE>, <&kp LC(C)>;
+    };
  
     keymap {
         compatible = "zmk,keymap";
@@ -185,18 +190,18 @@
 
         arrow_layer {
             bindings = <
-            &trans     &trans      &trans     &trans    &trans         &td_grave   &td_sz     &kp UP     &td_tn     &td_iw
-            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &trans       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
-            &trans     &trans     &trans     &trans     &trans         &td_dk       &td_cv     &td_pl     &trans  &kp SPACE
+            &trans     &trans      &trans     &trans    &trans         &td_grave_c   &trans     &kp UP     &trans    &trans
+            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LG(LS(4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
+            &trans     &trans     &trans     &trans     &trans        &trans      &trans     &trans     &trans  &trans
                                              &trans     &trans         &trans     &trans
             >;
         };
 
         mod_layer {
             bindings = <
-           &kp LA(Q)      &kp LA(W)     &kp LA(F)     &kp LC(LS(P))    &kp LA(G)            &kp LA(J)     &kp LA(L)     &kp LA(U)     &kp LA(Y)    &kp LA(COLON)
-           &kp LA(A)    &kp LA(R)  &kp LA(S)  &kp LA(T)      &kp LA(D)              &kp LA(H) &kp LA(N)  &kp LA(E) &kp LA(I) &kp LA(O)
-            &kp LA(Z)    &kp LA(X)    &kp LA(C)    &kp LA(V)    &kp LA(B)            &kp LA(K)    &kp LA(M)    &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
+           &kp LG(Q)      &kp LG(W)     &kp LG(F)     &kp LC(LS(P))    &kp LG(G)            &kp LG(J)     &kp LG(L)     &kp LG(U)     &kp LG(Y)    &kp LG(COLON)
+           &kp LG(A)    &kp LG(R)  &kp LG(S)  &kp LG(T)      &kp LG(D)              &kp LG(H) &kp LG(N)  &kp LG(E) &kp LG(I) &kp LG(O)
+            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(B)            &kp LG(K)    &kp LG(M)    &kp LG(COMMA)  &kp LG(DOT)  &kp LA(SPACE)
                                              &trans     &trans         &trans     &trans
             >;
         };
