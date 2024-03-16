@@ -165,7 +165,7 @@
     td_grave_c: tap_grave_c {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp LC(C)>;
+        bindings = <&kp LC(GRAVE)>, <&kp LC(C)>;
     };
  
     keymap {
