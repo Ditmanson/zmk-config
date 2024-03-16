@@ -192,15 +192,13 @@
             >;
         };
 
-
-            ctr_layer {
-    bindings = <
-        &kp LCTRL Q  &kp LCTRL W  &kp LCTRL F  &kp LCTRL P  &kp LCTRL G      &kp LCTRL J  &kp LCTRL L  &kp LCTRL U  &kp LCTRL Y  &kp LCTRL SEMI
-        &kp LCTRL A  &kp LCTRL R  &kp LCTRL S  &kp LCTRL T  &kp LCTRL D      &kp LCTRL H  &kp LCTRL N  &kp LCTRL E  &kp LCTRL I  &kp LCTRL O
-        &kp LCTRL Z  &kp LCTRL X  &kp LCTRL C  &kp LCTRL V  &kp LCTRL B      &kp LCTRL K  &kp LCTRL M  &kp LCTRL COMMA  &kp LCTRL DOT  &kp LCTRL SLASH
-                                    &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
-    >;
-};
-        
+        mod_layer {
+            bindings = <
+           &trans      &trans     &trans     &trans    &trans            &trans     &trans     &trans     &trans    &trans
+           &mt LALT A &mt LCMD R &mt LCTRL S  &mt LSHFT T  &trans      &trans    &mt RSHFT N &mt RCTRL E  &mt RCMD I &mt RALT O
+            &trans     &trans     &trans    &trans      &trans           &trans     &trans     &trans     &trans     &trans
+                                             &trans     &trans         &trans     &trans
+            >;
+        };
     };
 };
