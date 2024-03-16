@@ -197,7 +197,7 @@
                                              &trans     &kp LA(SPACE)         &trans     &trans
             >;
         };
-;
+
         mod_layer {
             bindings = <
            &kp LG(Q)      &kp LG(W)     &kp LG(F)     &kp LC(LS(P))    &kp LG(G)            &kp LG(J)     &kp LG(L)     &kp LG(U)     &kp LG(Y)    &kp LG(COLON)
