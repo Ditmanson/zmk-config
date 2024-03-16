@@ -27,13 +27,13 @@
 
         
     };
-    //  conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <NUM ARW>;
-    //         then-layer = <MOD>;
-    //     };
-    // };
+     conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NUM ARW>;
+            then-layer = <MOD>;
+        };
+    };
 
     td_1: tap_dance_1 {
         compatible = "zmk,behavior-tap-dance";
@@ -194,9 +194,9 @@
 
         mod_layer {
             bindings = <
-           &trans      &trans     &trans     &trans    &trans            &trans     &trans     &trans     &trans    &trans
-           &mt LALT A &mt LCMD R &mt LCTRL S  &mt LSHFT T  &trans      &trans    &mt RSHFT N &mt RCTRL E  &mt RCMD I &mt RALT O
-            &trans     &trans     &trans    &trans      &trans           &trans     &trans     &trans     &trans     &trans
+           &kp LA(Q)      &kp LA(W)     &kp LA(F)     &kp LA(P)    &kp LA(G)            &kp LA(J)     &kp LA(L)     &kp LA(U)     &kp LA(Y)    &kp LA(COLON)
+           &kp LA(A)    &kp LA(R)  &kp LA(S)  &kp LA(T)      &kp LA(D)              &kp LA(H) &kp LA(N)  &kp LA(E) &kp LA(I) &kp LA(O)
+            &kp LA(Z)    &kp LA(X)    &kp LA(C)    &kp LA(V)    &kp LA(B)            &kp LA(K)    &kp LA(M)    &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
                                              &trans     &trans         &trans     &trans
             >;
         };
