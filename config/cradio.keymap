@@ -190,7 +190,7 @@
 
         arrow_layer {
             bindings = <
-            &trans     &trans      &trans     &trans    &trans         &td_grave_c   &kp LC(LS(L))     &kp UP     &trans    &trans
+            &trans     &trans      &trans     &trans    &trans         &td_grave_c   &kp LG(LS(L))     &kp UP     &trans    &trans
             &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LA(LS(4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
              &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &trans      &trans     &trans     &trans  &trans
                                              &trans     &trans         &trans     &trans
