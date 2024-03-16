@@ -197,10 +197,10 @@
                                              &trans     &kp LA(SPACE)         &trans     &trans
             >;
         };
-
+;
         mod_layer {
             bindings = <
-           &kp LG(Q)      &kp LG(W)     &kp LG(F)     &kp LG(P)    &kp LG(G)            &kp LG(J)     &kp LG(L)     &kp LG(U)     &kp LG(Y)    &kp LG(COLON)
+           &kp LG(Q)      &kp LG(W)     &kp LG(F)     &kp LC(LS(P))    &kp LG(G)            &kp LG(J)     &kp LG(L)     &kp LG(U)     &kp LG(Y)    &kp LG(COLON)
            &kp LG(A)    &kp LG(R)  &kp LG(S)  &kp LG(T)      &kp LG(D)              &kp LG(H) &kp LG(N)  &kp LG(E) &kp LG(I) &kp LG(O)
             &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(B)            &kp LG(K)    &kp LG(M)    &kp LG(COMMA)  &kp LG(DOT)  &kp LG(SLASH)
                                              &trans     &trans         &trans     &trans
