@@ -165,7 +165,7 @@
     td_grave_c: tap_grave_c {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp LC(C)>;
+        bindings = <&kp LC(GRAVE)>, <&kp LC(C)>;
     };
  
     keymap {
@@ -183,25 +183,25 @@
             bindings = <
             &kp ESC    &td_grave  &td_quote   &kp MINUS   &kp UNDER        &trans     &td_left_bracket   &td_right_bracket      &trans      &trans
             &td_1     &td_2      &td_3      &td_4       &td_5         &td_6      &td_7      &td_8      &td_9     &td_0 
-            &trans     &trans   &trans    &kp EQUAL      &trans      &trans       &trans     &trans   &trans    &trans
-                                             &trans     &trans       &trans       &lt MOD SPACE     
+            &trans     &trans   &trans    &kp EQUAL      &trans      &kp LEFT       &kp RIGHT     &kp UP   &kp DOWN    &trans
+                                             &trans     &trans       &trans       &trans     
             >;
-        };
+        };  
 
         arrow_layer {
             bindings = <
             &trans     &trans      &trans     &trans    &trans         &td_grave_c   &kp LG(LS(L))     &kp UP     &trans    &trans
-            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LA(LS(4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
+            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LG(LS(4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
              &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &trans      &trans     &trans     &trans  &trans
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &kp LA(SPACE)         &trans     &trans
             >;
         };
 
         mod_layer {
             bindings = <
-           &kp LA(Q)      &kp LA(W)     &kp LA(F)     &kp LA(P)    &kp LA(G)            &kp LA(J)     &kp LA(L)     &kp LA(U)     &kp LA(Y)    &kp LA(COLON)
-           &kp LA(A)    &kp LA(R)  &kp LA(S)  &kp LA(T)      &kp LA(D)              &kp LA(H) &kp LA(N)  &kp LA(E) &kp LA(I) &kp LA(O)
-            &kp LA(Z)    &kp LA(X)    &kp LA(C)    &kp LA(V)    &kp LA(B)            &kp LA(K)    &kp LA(M)    &kp LA(COMMA)  &kp LA(DOT)  &kp LA(SLASH)
+           &kp LG(Q)      &kp LG(W)     &kp LG(F)     &kp LG(P)    &kp LG(G)            &kp LG(J)     &kp LG(L)     &kp LG(U)     &kp LG(Y)    &kp LG(COLON)
+           &kp LG(A)    &kp LG(R)  &kp LG(S)  &kp LG(T)      &kp LG(D)              &kp LG(H) &kp LG(N)  &kp LG(E) &kp LG(I) &kp LG(O)
+            &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(B)            &kp LG(K)    &kp LG(M)    &kp LG(COMMA)  &kp LG(DOT)  &kp LG(SLASH)
                                              &trans     &trans         &trans     &trans
             >;
         };

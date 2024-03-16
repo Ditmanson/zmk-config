@@ -183,10 +183,10 @@
             bindings = <
             &kp ESC    &td_grave  &td_quote   &kp MINUS   &kp UNDER        &trans     &td_left_bracket   &td_right_bracket      &trans      &trans
             &td_1     &td_2      &td_3      &td_4       &td_5         &td_6      &td_7      &td_8      &td_9     &td_0 
-            &trans     &trans   &trans    &kp EQUAL      &trans      &trans       &trans     &trans   &trans    &trans
-                                             &trans     &trans       &trans       &lt MOD SPACE     
+            &trans     &trans   &trans    &kp EQUAL      &trans      &kp LEFT       &kp RIGHT     &kp UP   &kp DOWN    &trans
+                                             &trans     &trans       &trans       &trans     
             >;
-        };
+        };  
 
         arrow_layer {
             bindings = <
