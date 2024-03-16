@@ -169,7 +169,7 @@
             bindings = <
             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &td_colon
             &kp A        &kp R       &kp S     &kp T     &kp D          &kp H      &kp N     &kp E       &kp I     &kp O
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &td_cmaless  &td_prdgt    &td_slash
+            &kp Z      &kp X      &kp LCTRL C     &kp V      &kp B          &kp K      &kp M      &td_cmaless  &td_prdgt    &td_slash
                                           &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
             >;
         };
@@ -193,14 +193,14 @@
         };
 
 
-            ctr_layer {
-    bindings = <
-        &kp LCTRL Q  &kp LCTRL W  &kp LCTRL F  &kp LCTRL P  &kp LCTRL G      &kp LCTRL J  &kp LCTRL L  &kp LCTRL U  &kp LCTRL Y  &kp LCTRL SEMI
-        &kp LCTRL A  &kp LCTRL R  &kp LCTRL S  &kp LCTRL T  &kp LCTRL D      &kp LCTRL H  &kp LCTRL N  &kp LCTRL E  &kp LCTRL I  &kp LCTRL O
-        &kp LCTRL Z  &kp LCTRL X  &kp LCTRL C  &kp LCTRL V  &kp LCTRL B      &kp LCTRL K  &kp LCTRL M  &kp LCTRL COMMA  &kp LCTRL DOT  &kp LCTRL SLASH
-                                    &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
-    >;
-};
+//             ctr_layer {
+//     bindings = <
+//         &kp LCTRL Q  &kp LCTRL W  &kp LCTRL F  &kp LCTRL P  &kp LCTRL G      &kp LCTRL J  &kp LCTRL L  &kp LCTRL U  &kp LCTRL Y  &kp LCTRL SEMI
+//         &kp LCTRL A  &kp LCTRL R  &kp LCTRL S  &kp LCTRL T  &kp LCTRL D      &kp LCTRL H  &kp LCTRL N  &kp LCTRL E  &kp LCTRL I  &kp LCTRL O
+//         &kp LCTRL Z  &kp LCTRL X  &kp LCTRL C  &kp LCTRL V  &kp LCTRL B      &kp LCTRL K  &kp LCTRL M  &kp LCTRL COMMA  &kp LCTRL DOT  &kp LCTRL SLASH
+//                                     &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
+//     >;
+// };
         
     };
 };
