@@ -192,7 +192,7 @@
             bindings = <
             &kp LC(LS(TAB))     &kp LC(TAB)      &kp LG(LS(TAB))     &kp LG(TAB)    &trans         &td_grave_c   &kp LG(LS(L))     &kp UP     &trans    &trans
             &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LG(LS(N4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &trans
-            &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &trans      &trans     &trans     &trans  &trans
+            &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &trans      &trans     &kp LG(ENTER)  &kp LG(LS(ENTER))  &trans
                                              &trans     &kp LA(SPACE)         &trans     &trans
             >;
         };
