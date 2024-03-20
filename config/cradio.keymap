@@ -108,7 +108,7 @@
             bindings = <
             &kp EXCL   &kp AT  &kp HASH &kp DLLR   &kp PRCNT   &kp CARET        &kp AMPS     &kp ASTRK    &kp PLUS      &kp EQUAL      
             &kp N1     &kp N2      &kp N3      &kp N4       &kp N5         &kp N6      &kp N7      &kp N8      &kp N9     &kp N0 
-            &kp MINUS     &kp UNDER   &td_quote    &td_grave      &td_dot_comma      &trans       &td_lpar_rpar     &tap_brace   &tap_bracket    &td_lt_gt
+            &kp MINUS     &kp UNDER   &td_quote    &td_grave      &td_dot_comma      &trans       &td_lpar_rpar     &td_brace   &td_braket    &td_lt_gt
                                              &trans     &trans       &trans       &trans     
             >;
         };  
