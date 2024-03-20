@@ -181,7 +181,7 @@
 
         num_layer {
             bindings = <
-            &kp ESC    &td_grave  &td_quote   &kp MINUS   &kp UNDER        &trans     &td_left_bracket   &td_right_bracket      &trans      &trans
+            &kp EXCL   &kp AT  &kp HASH &kp DLLR   &kp PRCNT   &kp CARET        &kp AMPS     &kp ASTRK    &kp PLUS      &kp EQUAL      
             &td_1     &td_2      &td_3      &td_4       &td_5         &td_6      &td_7      &td_8      &td_9     &td_0 
             &trans     &trans   &trans    &kp EQUAL      &trans      &kp LEFT       &kp RIGHT     &kp UP   &kp DOWN    &trans
                                              &trans     &trans       &trans       &trans     
