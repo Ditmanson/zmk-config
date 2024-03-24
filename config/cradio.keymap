@@ -125,7 +125,7 @@
 
         arrow_layer {
             bindings = <
-            &kp LC(LS(TAB))     &kp LC(TAB)   b   &kp LG(LS(TAB))     &kp LG(TAB)    &kp ESC         &td_grave_c   &kp LG(LS(L))     &kp UP   &kp LA(LSMF)  &kp LA(LG(I))    
+            &kp LC(LS(TAB))     &kp LC(TAB)      &kp LG(LS(TAB))     &kp LG(TAB)    &kp ESC         &td_grave_c   &kp LG(LS(L))     &kp UP   &kp LA(LSMF)  &kp LA(LG(I))    
             &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &kp LC(FSLH)      &kp LC(LG(S))       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
             &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &kp LG(LS(K))      &kp LG(LA(S))     &kp LG(COMMA)     &trans  &trans
                                              &trans     &kp LA(SPACE)         &kp TAB     &trans
