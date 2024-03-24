@@ -148,7 +148,7 @@
         //     &kp LG(Z)    &kp LG(X)    &kp LG(C)    &kp LG(V)    &kp LG(B)            &kp LG(K)    &kp LG(M)    &kp LG(COMMA)  &kp LG(DOT)  &kp LG(SLASH)
         //                                      &trans     &trans         &trans     &trans
         //     >;
-        };
+        // };
 
     };
 };
