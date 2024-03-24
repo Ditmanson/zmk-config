@@ -90,6 +90,16 @@
         #binding-cells = <0>;
         bindings = <&kp LBRC>, <&kp RBRC>;
     };
+    td_bslash_fslash: tap_bslash_fslash {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp BSLH>, <&kp FSLH>;
+    };
+    td_apos_grave: tap_apos_grave {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        bindings = <&kp APOS>, <&kp GRAVE>;
+    };
 
 
  
@@ -97,26 +107,26 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &td_colon
+            &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y      &td_apos_grave
             &kp A        &kp R       &kp S     &kp T     &kp D          &kp H      &kp N     &kp E       &kp I     &kp O
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &td_slash
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &td_colon
                                           &lt NUM BSPC   &kp LSHFT   &lt ARW ENTER  &td_tab    
             >;
         };
 
         num_layer {
             bindings = <
-            &kp EXCL   &kp AT  &kp HASH &kp DLLR   &kp PRCNT   &kp CARET        &kp AMPS     &kp ASTRK    &kp PLUS      &kp EQUAL      
+            &kp EXCL   &kp AT  &kp HASH &kp DLLR   &kp PRCNT   &kp CARET        &kp AMPS     &kp ASTRK    &kp GT    &kp EQUAL            
             &kp N1     &kp N2      &kp N3      &kp N4       &kp N5         &kp N6      &kp N7      &kp N8      &kp N9     &kp N0 
-            &kp MINUS     &kp UNDER   &td_quote    &td_grave      &td_dot_comma      &trans       &td_lpar_rpar     &td_brace   &td_braket    &td_lt_gt
+            &kp QMARK    &kp PIPE   &kp MINUS     &kp UNDER      &kp PLUS      &td_bslash_fslash       &td_lpar_rpar     &td_brace   &td_braket    &td_dot_comma
                                              &trans     &trans       &trans       &trans     
             >;
         };  
 
         arrow_layer {
             bindings = <
-            &kp LC(LS(TAB))     &kp LC(TAB)      &kp LG(LS(TAB))     &kp LG(TAB)    &kp ESC         &td_grave_c   &kp LG(LS(L))     &kp UP   &trans  &kp LA(LG(I))    
-            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &trans      &kp LC(LG(LS(N4)))       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
+            &kp LC(LS(TAB))     &kp LC(TAB)   b   &kp LG(LS(TAB))     &kp LG(TAB)    &kp ESC         &td_grave_c   &kp LG(LS(L))     &kp UP   &kp LA(LSMF)  &kp LA(LG(I))    
+            &kp LALT   &kp LCMD   &kp LCTRL   &kp LSHFT   &kp LC(FSLH)      &kp LC(LG(S))       &kp LEFT  &kp DOWN    &kp RIGHT   &kp TAB
             &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_CLR_ALL        &kp LG(LS(K))      &kp LG(LA(S))     &kp LG(COMMA)     &trans  &trans
                                              &trans     &kp LA(SPACE)         &kp TAB     &trans
             >;
